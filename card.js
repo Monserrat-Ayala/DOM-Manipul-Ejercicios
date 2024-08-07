@@ -29,28 +29,28 @@ const IMAGE_URL = "https://placehold.co/200";
 const users = [
     {
         id: 1,
-        user_name: 'UserKarla',
+        userName: 'UserKarla',
         description: 'Estudiante de leyes',
         age: '20',
-        fav_music: {
+        favMusic: {
             bands: ['Queen', 'Metallica', 'Iron', 'KISS']
         }
     },
     {
         id: 2,
-        user_name: 'UserToño',
+        userName: 'UserLuis',
         description: 'Estudiante medico',
         age: '27',
-        fav_music: {
+        favMusic: {
             bands: ['U2', 'Pink Floyd', 'Nirvana', 'Rolling Stones']
         }
     },
     {
         id: 3,
-        user_name: 'UserLucy',
+        userName: 'UserLucy',
         description: 'Estudiante Gastronomia',
         age: '25',
-        fav_music: {
+        favMusic: {
             bands: ['Acdc', 'RadioHead', 'Led Zeppelin', 'The Beatles']
         }
     }    
@@ -69,7 +69,7 @@ function createUserCard(user) {
 
 
     const cardTitle = document.createElement('h3');
-    cardTitle.textContent = user_name;
+    cardTitle.textContent = userName;
     cardTitle.classList.add("card-title");
     card.appendChild(cardTitle);
 
@@ -92,7 +92,7 @@ function createUserCard(user) {
 
 //crea una lista de bandas favoritas
     const bandsList = document.createElement('p');
-    bandas.textContent = user.fav_music.bands;
+    bandas.textContent = user.favMusic.bands;
     card.appendChild(bandsList);
 
     return card;
