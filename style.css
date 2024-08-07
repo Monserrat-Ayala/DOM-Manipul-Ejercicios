@@ -1,0 +1,16 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card-title {
+    color: red;  
+}
+
+.card {
+    background-color: aquamarine;
+    padding: 5px;
+}
